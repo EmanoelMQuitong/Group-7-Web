@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name=" viewport" content="width=device-width, initial-scale=1.0">
+<title> MyWebsite - Pyflask Introduction To Website</title>
+<link rel="stylesheet" href="/static/style.css">
+<head>
+<h1>Group 7</h1>
+<li><a href="#">Home</a></li>
+<li><a href="#">Profile</a></li>
+<li><a href="#">Works</a></li>
+<li><a href="#">Contacts</a></li>
+</head>
+<body>
+    <form action="/queue_dequeue" method="post">
+        <label for="inputString">Enter a string:</label>
+        <input type="text" id="inputString" name="inputString" placeholder="SpongeBob Squarepants">
+        <br>
+        <br>
+        <br>
+        <input type="submit" id ="enequeue" name="enqueue" value="enqueue">
+        <input type="submit" id ="dequeue" name="dequeue" value="dequeue">
+    </form>
+    <br>
+    <br>
+    {% if Enqueue %}
+    <p>Enqueue: {{ "->".join(Enqueue) }}</p>
+    {% endif %}
+    {% if Dequeue %}
+    <p>Dequeue: {{ Dequeue }}</p>
+    {% endif %}
+</body>

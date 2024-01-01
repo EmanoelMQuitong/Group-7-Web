@@ -32,20 +32,7 @@ class Queue:
             if current_node.next:
                 linked_list_str += "->"
             current_node = current_node.next
-        print(linked_list_str)
+        return str(linked_list_str)
 
 # Example usage:
-linked_list = Queue()
-linked_list.enqueue(2)
-linked_list.enqueue(4)
-linked_list.enqueue(6)
-linked_list.enqueue(8)
-linked_list.enqueue(10)
-linked_list.enqueue(12)
-linked_list.printLinkedList()
-linked_list.dequeque()
-linked_list.printLinkedList()
-linked_list.dequeque()
-linked_list.printLinkedList()
-linked_list.dequeque()
-linked_list.printLinkedList()
+
